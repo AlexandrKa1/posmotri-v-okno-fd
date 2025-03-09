@@ -16,6 +16,10 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   
 }
 
 h1,
@@ -61,7 +65,7 @@ ol {
 }
 
 .result {
-  grid-area: "result";
+  grid-area: result;
   margin-top: 70px;
 
 }
@@ -231,7 +235,8 @@ ol {
   flex-direction: column;
   justify-content: flex-end;
   gap: 26px;
-  height: 100%;
+  min-width: 399px;
+  min-height: 534px; 
 }
 
 .title {
@@ -312,6 +317,7 @@ ol {
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-top: -4px;
 }
 
 .content__video-card-description {
